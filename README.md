@@ -1,49 +1,43 @@
 ![Image description](https://i1.faceprep.in/ProGrad/prograd-logo.png)
-# MongoDB | Query Document-2
+# PROGRAD LABS | MONGODB | WORKING WITH QUERY - MODULE 2
 
 ## Introduction
 
 We learned about databases, and more specifically, about MongoDB. During the rest of the bootcamp, we will keep using MongoDB as our database, so we need to start practicing a bit. As we mentioned before, almost every web app we develop will include CRUD (Create, Read, Update and Delete) operations within the database. 
 
-For manipulating our database, we learned how to use Mongo Compass, the official GUI of MongoDB. When developing our website, we will do CRUD operations directly from our code, and later on the bootcamp, we will learn how to integrate everything. But for now, you should focus on learning really well how to do queries, and how to use useful features such as **projections, sort, skip or limit**.
+For manipulating our database, we learned how to use Mongo shell and also you can use mongo compass, the official GUI of MongoDB. When developing our website, we will do CRUD operations directly from our code, and later on the bootcamp, we will learn how to integrate everything. But for now, you should focus on learning really well how to do queries, and how to use useful features such as **projections, sort, skip or limit**.
 
 
 ## Deliverables
 
-Since we will be querying our database from Mongo Compass, you will need to copy/paste the `query`, `projection`, `sort`, `skip` and `limit` you entered on Mongo Compass. On the `queries.md` file, you will find the instructions about the 25 queries you need to do, and a field to fill the answers.
-
-### Example 
-
-1. This is an example
- - **`query`**: /*You should copy/paste the query in here*/
- - **`projection`**: /*You should copy/paste the projection in here*/
- - **`sort`**: /*You should copy/paste the sort in here*/
- - **`skip`**: /*You should copy/paste the skip in here*/
- - **`limit`**: /*You should copy/paste the limit in here*/
+Since we will be querying our database from Mongo Compass, you will need to copy/paste the `query`, `projection`, `sort`, `skip` and `limit` you entered on Mongo Compass. On the `PROGRESSION 2`, you will find the instructions about the 25 queries you need to do, and a field to fill the answers.
 
 ## Instructions
+
+Since we will be querying our database from Mongo Shell, you will need to copy/paste the `query`, `projection`, `sort`, `skip` and `limit` you entered on Mongo Shell. In the `PROGRESSION 2`, you will find the instructions about the queries you need to do.
 
 ### Progression 1
 
 First, we need to import the database we will be using for the `lab`. We will use the Crunchbase database. Crunchbase is the premier destination for discovering industry trends, investments, and news about hundreds of thousands of companies globally. From startups to Fortune 500s, Crunchbase is recognized as the primary source of company intelligence by millions of users globally.
 
-The database contains more than 18k documents, and each of them has a lot of information about each of the companies. A document looks like the following:
+The database contains more than 18k documents. Each document holds the data about each of the companies. A document looks like the following:
 
-![image](https://user-images.githubusercontent.com/23629340/36494916-d6db1770-1733-11e8-903e-5119b3c1b688.png)
-
-1. You will find the `.zip` file of the Database on the **lab** folder.
+1. You will find the `companies.json` file of the database on the **dataset.zip** folder.
 2. Unzip the file
-3. From the terminal, import the database to Mongo using the following command:
+3. Navigate to this lab's folder in your terminal, and when inside, import the database to Mongo using the following command:
+
+**When running the `mongoimport` you should be located in the same folder as the `data.json` file.**
+
 ```bash
-$ mongoimport --db companies --collection companies --file companies.json
+$ mongoimport --db companiesDB --collection companies --file companies.json
 ```
+
+What this mongoimport will do for us is to create a database named _companiesDB_, and inside the database will create a collection named _companies_ which will be fed with _companies.json_.
+
 4. Check on Mongo Compass if everything goes ok:
 
 ![image](https://user-images.githubusercontent.com/23629340/36534191-1f1bc5ec-17c6-11e8-9463-4945679b98c0.png)
 
-:::info
-When running the `mongoimport` you should be located in the same folder the `companies.json` file.
-:::
 
 ### Progression 2
 
