@@ -1,4 +1,4 @@
-
+![Image description](https://i1.faceprep.in/ProGrad/prograd-logo.png)
 # MongoDB | Query Document-2
 
 ## Introduction
@@ -23,7 +23,7 @@ Since we will be querying our database from Mongo Compass, you will need to copy
 
 ## Instructions
 
-### Iteration 1
+### Progression 1
 
 First, we need to import the database we will be using for the `lab`. We will use the Crunchbase database. Crunchbase is the premier destination for discovering industry trends, investments, and news about hundreds of thousands of companies globally. From startups to Fortune 500s, Crunchbase is recognized as the primary source of company intelligence by millions of users globally.
 
@@ -45,7 +45,7 @@ $ mongoimport --db companies --collection companies --file companies.json
 When running the `mongoimport` you should be located in the same folder the `companies.json` file.
 :::
 
-### Iteration 2
+### Progression 2
 
 Let's start doing our queries; we will be doing the first one together:
 
@@ -76,7 +76,7 @@ Let's do it one more together:
 12. Find all the companies that have been acquired on January of 2014. Retrieve only the `acquisition` and `name` fields.
 
 
-Good luck! :wink:
+Happy Coding! :heart:
 
 
 
